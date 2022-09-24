@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/gdefault">
+        <item
+            android:id="@+id/mhome"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/mproducts"
+            android:icon="@drawable/ic_view_quilt_black_24dp"
+            android:title="Products" />
+
+        <item
+            android:id="@+id/mcat"
+            android:icon="@drawable/ic_view_quilt_black_24dp"
+            android:title="Shop By Category" />
+    </group>
+
+    <group android:id="@+id/gadmin">
+        <item
+            android:id="@+id/maddpro"
+            android:enabled="true"
+            android:icon="@drawable/ic_view_quilt_black_24dp"
+            android:title="Add Products" />
+
+        <item
+            android:id="@+id/mshowall"
+            android:enabled="true"
+            android:icon="@drawable/ic_view_quilt_black_24dp"
+            android:title="Add Products" />
+
+        <item
+            android:id="@+id/morders"
+            android:enabled="true"
+            android:icon="@drawable/ic_view_quilt_black_24dp"
+            android:title="Orders" />
+    </group>
+
+    <group android:id="@+id/gcustomer">
+        <item
+            android:id="@+id/mcart"
+            android:enabled="true"
+            android:icon="@drawable/ic_shopping_cart_black_24dp"
+            android:title="View Cart" />
+
+        <item
+            android:id="@+id/mnoti"
+            android:enabled="true"
+            android:icon="@drawable/ic_notification_active_black_24dp"
+            android:title="Orders History"/>
+    </group>
+
+    <group android:id="@+id/guser">
+        <item
+            android:id="@+id/mchangepwd"
+            android:enabled="true"
+            android:icon="@drawable/ic_person_add_black_24dp"
+            android:title="Change password"/>
+
+        <item
+            android:id="@+id/mlogout"
+            android:enabled="true"
+            android:icon="@drawable/ic_person_add_black_24dp"
+            android:title="Log out"/>
+    </group>
+
+</menu>

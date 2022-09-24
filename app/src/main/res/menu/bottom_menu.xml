@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mhome"
+        android:enabled="true"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/mcat"
+        android:enabled="true"
+        android:icon="@drawable/ic_view_quilt_black_24dp"
+        android:title="Products"/>
+
+    <item
+        android:id="@+id/mnoti"
+        android:enabled="true"
+        android:icon="@drawable/ic_notification_active_black_24dp"
+        android:title="Orders"/>
+
+    <item
+        android:id="@+id/maccount"
+        android:enabled="true"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="Account"/>
+
+    <item
+        android:id="@+id/mcart"
+        android:enabled="true"
+        android:icon="@drawable/ic_shopping_cart_black_24dp"
+        android:title="Cart"/>
+
+</menu>
