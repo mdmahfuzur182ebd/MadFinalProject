@@ -16,7 +16,7 @@ public class aboutsFragment extends  Fragment{
     }
 
 
-    public  View onCreatView(LayoutInflater inflater, ViewGroup Container, Bundle savedInstanceState){
+    public  View onCreateView(LayoutInflater inflater, ViewGroup Container, Bundle savedInstanceState){
       getActivity().setTitle("Shopify-Cart");
       return  inflater.inflate(R.layout.fragment_abouts, Container, false);
 
