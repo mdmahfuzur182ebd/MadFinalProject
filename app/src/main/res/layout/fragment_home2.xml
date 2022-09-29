@@ -19,7 +19,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <AutoCompleteTextView
-            android:id="@+id/actvpnanes"
+            android:id="@+id/actvpnames"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -29,7 +29,7 @@
             android:textAlignment="center"
             app:layout_constraintEnd_toStartOf="@+id/imbsearch"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/vpslider"/>
+            app:layout_constraintTop_toBottomOf="@+id/vpslider" />
 
         <ImageButton
             android:id="@+id/imbsearch"
@@ -37,10 +37,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="16dp"
-            android:src="@drawable/ic_call_black_24dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/vpslider"/>
-
+            android:src="@drawable/ic_search_black_24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vpslider" />
 
 
         <ImageView
@@ -61,7 +60,7 @@
             android:layout_marginTop="36dp"
             android:layout_marginEnd="8dp"
             android:text="Call Mega Mart For Order"
-            android:textColor="#B0000"
+            android:textColor="#0B0000"
             android:textSize="18sp"
             app:layout_constraintEnd_toStartOf="@+id/bcallnow"
             app:layout_constraintHorizontal_bias="0.0"
