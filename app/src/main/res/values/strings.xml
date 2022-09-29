@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">FinalprojectApp</string>
+    <string name="app_name">Mega Mart</string>
+    <string name="contact">9811762345</string>
+    <string name="about">The new Mega Mart app are even offering attractive discounts to gather large customer bases. According </string>
+    <string name="hello_bank_fragment">Hello Blank fragment</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
+
 </resources>
