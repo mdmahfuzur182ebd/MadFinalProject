@@ -12,9 +12,9 @@ public class AccountFragment  extends Fragment {
 
     }
 
-    public View onCreateView(LayoutInflater inflater, ViewGroup Container, Bundle savedInstanceState){
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         getActivity().setTitle("Shopify-Account");
-        return  inflater.inflate(R.layout.fragment_abouts, Container, false);
+        return  inflater.inflate(R.layout.fragment_abouts, container, false);
 
 
     }
