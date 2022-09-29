@@ -1,9 +1,11 @@
 plugins {
     id 'com.android.application'
+    apply plugin: 'com.google.gms.google-services'
 }
 
 android {
     compileSdk 32
+//    buildToolsVersion "32.0.3"
 
     defaultConfig {
         applicationId "com.example.finalprojectapp"
