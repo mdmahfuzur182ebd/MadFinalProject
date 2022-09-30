@@ -15,7 +15,11 @@ import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 
+import com.google.android.ads.mediationtestsuite.activities.HomeActivity;
+
 public class LoginFragment extends Fragment {
+    private Object MediMartUtils;
+
     public LoginFragment(){
 
     }
@@ -37,38 +41,40 @@ public class LoginFragment extends Fragment {
             getActivity().setTitle("MediaMart-Customer Login");
             sp = getActivity().getSharedPreferences("users", Context.MODE_PRIVATE);
             edit = sp.edit();
-            b1.setOnClickListener((v) -> {
-                String userid = et1.getText().toString();
-                String pwd = et2.getText().toString();
-                if (userid.length() == 0) {
-                    et1.setHintTextColor(Color.RED);
-                    et2.setError("User ID Is Required");
-                } else {
-                    Cursor c = db.validate(userid, pwd);
-                    if (c.moveToNext()) {
-                        String role = c.getString(3);
-                        Log.d("anand", "OnClock: -" + role + "-");
-                        if (role.equals("admin")) {
-                            edit.putString("userid", userid);
-                            edit.putString("role", role);
-                            edit.commit();
-                            MediMartUtils.loadwithoutHistoryFragment(getActivity(), new CategoryFragment());
-                        } else {
-                            edit.putString("userid", userid);
-                            edit.putString("role", role);
-                            edit.commit();
-                            MediMartUtils.loadwithoutHistoryFragment(getActivity(), new CategoryFragment());
-                        }
-                        ((HomeActivity) getActivity().loadmenu());
-
-                    } else {
-                        Toast.makeText(getContext(), "Invalid Username or Password", Toast.LENGTH_SHORT).show();
-                    }
-                }
-
-            });
+            b1.setOnClickListener(this::onClick);
 
             return vv;
 
         }
+
+    private void onClick(View v) {
+        String userid = et1.getText().toString();
+        String pwd = et2.getText().toString();
+        if (userid.length() == 0) {
+            et1.setHintTextColor(Color.RED);
+            et2.setError("User ID Is Required");
+        } else {
+            Cursor c = db.validate(userid, pwd);
+            if (c.moveToNext()) {
+                String role = c.getString(3);
+                Log.d("anand", "OnClock: -" + role + "-");
+                if (role.equals("admin")) {
+                    edit.putString("userid", userid);
+                    edit.putString("role", role);
+                    edit.commit();
+                    MediMartUtils.loadwithoutHistoryFragment(getActivity(), new CategoryFragment());
+                } else {
+                    edit.putString("userid", userid);
+                    edit.putString("role", role);
+                    edit.commit();
+                    MediMartUtils.loadwithoutHistoryFragment(getActivity(), new CategoryFragment());
+                }
+                ((HomeActivity) getActivity().loadmenu());
+
+            } else {
+                Toast.makeText(getContext(), "Invalid Username or Password", Toast.LENGTH_SHORT).show();
+            }
+        }
+
+    }
 }
