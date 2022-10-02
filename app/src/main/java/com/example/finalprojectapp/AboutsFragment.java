@@ -8,10 +8,10 @@ import android.view.View;
 import  androidx.fragment.app.Fragment;
 
 
-public class aboutsFragment extends  Fragment{
+public class AboutsFragment extends  Fragment{
 
 
-    public  aboutsFragment(){
+    public AboutsFragment(){
 
     }
 
